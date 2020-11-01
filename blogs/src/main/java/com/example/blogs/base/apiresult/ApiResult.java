@@ -4,9 +4,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
-/**
- * Created by chenyuanguo on 2017/3/28.
- */
+
 @ApiModel(value = "Api返回结果对象", parent = ApiResultBase.class)
 @JsonPropertyOrder(value = {"status", "msg", "data"})
 public class ApiResult<T> extends ApiResultBase
